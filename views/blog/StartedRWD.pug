@@ -1,0 +1,43 @@
+extends ../layout
+
+block content
+
+		.container.paddingScrollTop
+			
+			.row
+				// Blog Entries Column
+				.col-md-8
+					h1.page-header.text-center
+						| Getting Started with RWD (responsive width device)
+					p
+						| Which one is best practice to using pointbreak in css?
+
+					p First, as with getting all websites to become responsive and adhere to media queries, the viewport meta tag must be placed in the &lt;head&gt; section of your web page. The basic standard version of this is shown below.
+					p &lt;meta name="viewport" content="width=device-width,initial-scale=1"&gt; Once we have this snippet of code in our webpage, if we view the page with different devices, the different media queries will be able to have the correct effect. Without this, viewing the page in the specific device would basically just display a zoomed-out version of your page; it would be attempting to cram your entire website into its 320px wide display. Not good for you or your users! Users don’t like having to zoom to view your website’s content, and they certainly don’t want to deal with the vertical scrolling that would result.
+					ol
+						li @media (min-width: @768px{ ...}
+						li @media only and (min-width: @768px) { ... }
+						li @media only screen and (min-width: @768px) { ... }
+
+					p Have you noticed the frist two does not have "screen"?
+					p I use #1
+					
+					p Frist link is explanation 
+						a(href='http://stackoverflow.com/questions/8549529/what-is-the-difference-between-screen-and-only-screen-in-media-queries' target='_blank') here 
+						i.fa.fa-external-link(aria-hidden='true')
+					p Second link is explanation 
+						a(href=' https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries') here 
+						i.fa.fa-external-link(aria-hidden='true')
+
+					p Thanks for reading.
+					hr
+				include ../include/blogSidebar.pug
+				#disqus_thread
+					script.
+						var disqus_config=function(){
+						this.page.url="http://van-vlymen.com/blogs/startedrwd", // Replace PAGE_URL with your page's canonical URL variable
+						this.page.identifier="3"}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+						!function(){var e=document,t=e.createElement("script");
+						t.src="//vanvlymenblogs.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),
+						(e.head||e.body).appendChild(t)}();
+					script#dsq-count-scr(src='//vanvlymenblogs.disqus.com/count.js', async='')

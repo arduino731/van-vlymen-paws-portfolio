@@ -1,0 +1,34 @@
+doctype html
+html
+	include ../../include/head2.pug
+	body
+		include ../../include/nav1.pug
+
+		.container.paddingScrollTop
+			h1.page-header.text-center 
+				| Categories Jade
+			.row
+				.col-md-8
+					h2
+						|How-to-add-Jade-syntax-highlighting-in-Sublime-Text-2
+					p
+					span.glyphicon.glyphicon-time
+					|  Posted on Apirl 22, 2016 at 3:35 PM
+
+					ol
+						li I find it easier to just use Package Control to install packages.
+
+						li 
+							p 
+								|Install Package Control from 
+								a(href='http://wbond.net/sublime_packages/package_control/installation') sublime_packages
+						li Restart Sublime Text 2.
+						li Hit Command-Shift-P to open up the Command Palette, where you can type "install package".  Hit enter and it will open up another search box.
+						li Type "jade" and it should autocomplete to the Jade package.  Hit enter to install the package.
+						li Restart Sublime Text 2.
+
+						li Happy coding!
+
+				include ../../include/blogSidebar.pug
+				hr
+	include ../../include/footer.pug

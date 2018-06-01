@@ -1,0 +1,22 @@
+doctype html
+html
+	include ../../include/head.pug
+	body
+		include ../../include/nav.pug
+
+		.container.paddingScrollTop
+			h1 welcome to Catgories Angular
+			.row
+				.col-md-8
+					h1.page-header.text-center
+						| BLOG 1
+					h2
+					a(href='/blogs/quoteMachine') Building a Random Quote Machine [Project]
+					p
+					span.glyphicon.glyphicon-time
+					|  Posted on Apirl 10, 2016 at 10:45 PM
+				hr
+
+				include ../../include/blogSidebar.pug
+				hr
+	include ../../include/footer.pug

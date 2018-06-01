@@ -1,0 +1,11 @@
+start the app:
+$ nodemon app.js 
+load http://localhost:3000/ in the browser
+
+
+tools:
+online javascript compression tool 
+http://jscompress.com/
+
+HTML snippet convert to a Jade snippet useful for testing out how something would like in Jade vs HTML
+http://html2jade.org/
