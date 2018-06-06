@@ -2,167 +2,167 @@ extends ../layout
 
 block content
 
-		.container.paddingScrollTop
-			
-			.row
-				// Blog Entries Column
-				.col-md-8
-					h1.page-header.text-center
-						| Building a Weather App [Project]
-					p
-					| Last week's project involved building an app to show the local weather of any location.
-					p The following user stories were to be implemented:
-					ul
-						li User can view the weather in his/her current location.
-						li User can toggle the temperature unit (Celsius or Fahrenheit).
-						li Weather icon or background image will change depending on weather conditions.
-					p I decided to take a picture of demo weather app to create simiarly to their UX design. 
-						img(src="http://i.imgur.com/jB0ktgG.png" alt="demo weather" class="img-responsive text-center" style="height:400px;margin:auto;")
-					h2.text-center Design
-					p
-					| I had a bunch of ideas for the design of this app and I did look at a few completed  projects (without checking the code of course) from the community to see what other folks were displaying in their app and how it looked.
-					p
-					| Coming up with a final layout was a bit tricky but I found it helpful to decide the elements I wanted to display for the user and build from there.
-					p
-					| Keeping things simple was the aim here. I decided to show only the temperature and weather description in addition to the local time.
-					p
-					| I also liked the animated weather icon in the 
-					a(href='http://codepen.io/FreeCodeCamp/full/bELRjV') example project
-					|  and felt that was a better representation of the current weather than a background image so I wanted to implement that into my app.
-					p
-					| Setting everything up was pretty straight forward except finding a suitable animated icon set. I had to search a bit before I found 
-					a(href='https://darkskyapp.github.io/skycons/') Skycons
-					|  which is what I ended up using.
-					p
-					| The other thing I struggled with was finding a good colour scheme for the app, and this is something I almost always struggle with. I experimented with different combinations before landing the final product.
-					h2.text-center Logic
-					p
-					| After looking at an example API response from 
-					a(href='http://openweathermap.org/current#geo') Open Weather
-					| , I figured I'll need to get the longitude and latitude of the user to be able to serve weather information on page load. Another an example API from 
-					a(herf="http://ipinfo.io/") ipinfo.io 
-					| However, I rather using ipinfo.io because it does not have to annoying you to approve the geolocation, so I decided to find your IP address right away. It can find your location suddenly. 
-					p
-					| I am using jQuery JSON API from their command line.
-					.hightlight
-						pre.
-							function getLocation(){
-							$.get("http://ipinfo.io", function(json){
-							// console.log(json);
+	.container.paddingScrollTop
+		
+		.row
+			// Blog Entries Column
+			.col-md-8
+				h1.page-header.text-center
+					| Building a Weather App [Project]
+				p
+				| Last week's project involved building an app to show the local weather of any location.
+				p The following user stories were to be implemented:
+				ul
+					li User can view the weather in his/her current location.
+					li User can toggle the temperature unit (Celsius or Fahrenheit).
+					li Weather icon or background image will change depending on weather conditions.
+				p I decided to take a picture of demo weather app to create simiarly to their UX design. 
+					img(src="http://i.imgur.com/jB0ktgG.png" alt="demo weather" class="img-responsive text-center" style="height:400px;margin:auto;")
+				h2.text-center Design
+				p
+				| I had a bunch of ideas for the design of this app and I did look at a few completed  projects (without checking the code of course) from the community to see what other folks were displaying in their app and how it looked.
+				p
+				| Coming up with a final layout was a bit tricky but I found it helpful to decide the elements I wanted to display for the user and build from there.
+				p
+				| Keeping things simple was the aim here. I decided to show only the temperature and weather description in addition to the local time.
+				p
+				| I also liked the animated weather icon in the 
+				a(href='http://codepen.io/FreeCodeCamp/full/bELRjV') example project
+				|  and felt that was a better representation of the current weather than a background image so I wanted to implement that into my app.
+				p
+				| Setting everything up was pretty straight forward except finding a suitable animated icon set. I had to search a bit before I found 
+				a(href='https://darkskyapp.github.io/skycons/') Skycons
+				|  which is what I ended up using.
+				p
+				| The other thing I struggled with was finding a good colour scheme for the app, and this is something I almost always struggle with. I experimented with different combinations before landing the final product.
+				h2.text-center Logic
+				p
+				| After looking at an example API response from 
+				a(href='http://openweathermap.org/current#geo') Open Weather
+				| , I figured I'll need to get the longitude and latitude of the user to be able to serve weather information on page load. Another an example API from 
+				a(herf="http://ipinfo.io/") ipinfo.io 
+				| However, I rather using ipinfo.io because it does not have to annoying you to approve the geolocation, so I decided to find your IP address right away. It can find your location suddenly. 
+				p
+				| I am using jQuery JSON API from their command line.
+				.hightlight
+					pre.
+						function getLocation(){
+						$.get("http://ipinfo.io", function(json){
+						// console.log(json);
 
-							$('.city').append(json.city, ",");
-							$('.region').append(json.region);
+						$('.city').append(json.city, ",");
+						$('.region').append(json.region);
 
-							var units = getUnits(json.country);
-								getWeather(json.loc, units);
-							}, "jsonp");
+						var units = getUnits(json.country);
+							getWeather(json.loc, units);
+						}, "jsonp");
+						}
+				p
+				| I stored the returned values in already declared variables and used them to make the AJAX request. 
+				p
+				| The Open Weather API gave me a way to update the location, temperature and weather description. if you have not sign up api.openweathermap you will get an error as invalid API key (http://openweathermap.org/faq#error401). They starting from Oct 9 2015 to use their API requires a valid APPID for access. you can take a minute to register a free account to receive a key. Once you sign up, you will receive an API keys. My key is 27c8de069be4d25f07aeb818308889b8. It required to put &appid={{API_key}} in URL
+				p
+				| Examples of API calls: 
+				a(href="http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") Examples of API calls
+				.highlight
+					pre.
+						http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=27c8de069be4d25f07aeb818308889b8
+				p
+				| The last thing I did was to update the weather icon on the conditions in the user's location or city of interest. I decided a good way to do this was to check the weather description and change the icon based on that.
+				h1.text-center
+					|imperial (f) or metric (c)
+				p
+				| How do you find the temp for imperial or metric in javascript? You will have to use an Kelvin 
+				a(href="https://en.wikipedia.org/wiki/Kelvin" target="_blank") Wiki    
+				| . Converting Kelvin to celsius is easy, just subtract 273.15. 
+				a(href="http://api.openweathermap.org/data/2.5/weather?lat=29.5834&lon=-98.3994&units=imperial&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") units = imperial 
+				p
+				| see as main.temp JSON 
+				p
+				| Now, Removed &units=imperial 
+				a(href="http://api.openweathermap.org/data/2.5/weather?lat=29.5834&lon=-98.3994&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") without units = imperial or metric 
+				p
+				| See as main.temp JSON, noticed the temp is over hundreds number 
+				p
+				| You will have to use Kelvin, if you have 93 from main.temp JSON from units = imperial.
+				.highlight
+					pre.
+						var metric = ((93 + 273.15)-30 * 1.8).toFixed(0); // 312.15
+						var temp = [ ( metric - 273.15).toFixed(0) + "°C", (93).toFixed(0) + "F"];
+						console.log(temp[0]); // metric
+						console.log(temp[1]); // imperial
+
+						// noticed only five countries imperial which are 
+
+						function getUnits(country){
+							var imperialCountries =  ['US', 'BS', 'BZ', 'KY', 'PW'];
+							if(imperialCountries.indexOf(country) === -1){
+							var units = "metric";
+							}else{
+							var units ='imperial';
 							}
-					p
-					| I stored the returned values in already declared variables and used them to make the AJAX request. 
-					p
-					| The Open Weather API gave me a way to update the location, temperature and weather description. if you have not sign up api.openweathermap you will get an error as invalid API key (http://openweathermap.org/faq#error401). They starting from Oct 9 2015 to use their API requires a valid APPID for access. you can take a minute to register a free account to receive a key. Once you sign up, you will receive an API keys. My key is 27c8de069be4d25f07aeb818308889b8. It required to put &appid={{API_key}} in URL
-					p
-					| Examples of API calls: 
-					a(href="http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") Examples of API calls
-					.highlight
-						pre.
-							http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=27c8de069be4d25f07aeb818308889b8
-					p
-					| The last thing I did was to update the weather icon on the conditions in the user's location or city of interest. I decided a good way to do this was to check the weather description and change the icon based on that.
-					h1.text-center
-						|imperial (f) or metric (c)
-					p
-					| How do you find the temp for imperial or metric in javascript? You will have to use an Kelvin 
-					a(href="https://en.wikipedia.org/wiki/Kelvin" target="_blank") Wiki    
-					| . Converting Kelvin to celsius is easy, just subtract 273.15. 
-					a(href="http://api.openweathermap.org/data/2.5/weather?lat=29.5834&lon=-98.3994&units=imperial&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") units = imperial 
-					p
-					| see as main.temp JSON 
-					p
-					| Now, Removed &units=imperial 
-					a(href="http://api.openweathermap.org/data/2.5/weather?lat=29.5834&lon=-98.3994&appid=27c8de069be4d25f07aeb818308889b8" target="_blank") without units = imperial or metric 
-					p
-					| See as main.temp JSON, noticed the temp is over hundreds number 
-					p
-					| You will have to use Kelvin, if you have 93 from main.temp JSON from units = imperial.
-					.highlight
-						pre.
-							var metric = ((93 + 273.15)-30 * 1.8).toFixed(0); // 312.15
-							var temp = [ ( metric - 273.15).toFixed(0) + "°C", (93).toFixed(0) + "F"];
-							console.log(temp[0]); // metric
-							console.log(temp[1]); // imperial
+							// console.log(country, units);
+							return units
+						}
+				h1.text-center
+					| How do you display javascript datetime in 12 hours AM/PM format?
+				.highlight
+					pre.
+						function clock(){
+							var date = new Date();
+							var hours = date.getHours();
+							var minutes = date.getMinutes();
+							var ampm = hours >= 12 ? 'pm' : 'am';
+							hours = hours % 12;
+							// console.log(hours);
+							hours = hours ? hours : 12;
+							// console.log(hours);
+							minutes = minutes < 10 ? '0'+minutes : minutes;
+							var strTime = hours + ':' + minutes + ' ' + ampm;
+							// console.log(strTime);
+							// return strTime;
+						}
+				p
+				| So I considered a few possible scenarios such as clear sky, cloud, snow, sunny, rain e.t.c and wrote a bunch of conditional statements to check if the weather description contained one of keywords and then update the weather icon.
+				.highlight
+					pre.
+						//Update Weather animation based on the returned weather description
 
-							// noticed only five countries imperial which are 
+						var weather = json.weather[0].description;
 
-							function getUnits(country){
-								var imperialCountries =  ['US', 'BS', 'BZ', 'KY', 'PW'];
-								if(imperialCountries.indexOf(country) === -1){
-								var units = "metric";
-								}else{
-								var units ='imperial';
-								}
-								// console.log(country, units);
-								return units
-							}
-					h1.text-center
-						| How do you display javascript datetime in 12 hours AM/PM format?
-					.highlight
-						pre.
-							function clock(){
-								var date = new Date();
-								var hours = date.getHours();
-								var minutes = date.getMinutes();
-								var ampm = hours >= 12 ? 'pm' : 'am';
-								hours = hours % 12;
-								// console.log(hours);
-								hours = hours ? hours : 12;
-								// console.log(hours);
-								minutes = minutes < 10 ? '0'+minutes : minutes;
-								var strTime = hours + ':' + minutes + ' ' + ampm;
-								// console.log(strTime);
-								// return strTime;
-							}
-					p
-					| So I considered a few possible scenarios such as clear sky, cloud, snow, sunny, rain e.t.c and wrote a bunch of conditional statements to check if the weather description contained one of keywords and then update the weather icon.
-					.highlight
-						pre.
-							//Update Weather animation based on the returned weather description
+						if(weather.indexOf("rain") &gt;= 0) {
+							skycons.set("animated-icon", Skycons.RAIN);
+						}
 
-							var weather = json.weather[0].description;
-
-							if(weather.indexOf("rain") &gt;= 0) {
-							    skycons.set("animated-icon", Skycons.RAIN);
-							}
-
-							else if (weather.indexOf("sunny") &gt;= 0) {
-							skycons.set("animated-icon", Skycons.CLEAR_DAY);
-							}
-					p
-					| I have discovered, through various tests, that this method is not 100% foolproof but it worked well enough for me to stick with it.
-					// <p>You can checkout the full code and effects on <a href="http://codepen.io/ayoisaiah/full/LNLzgx/">Codepen</a>.</p>
-					h2 Key takeaway
-					p
-					| My major takeaway from this project is that I learnt how to access each part of the returned JSON data from the API response and use it in different ways. Although my methodology needs some refining, it's bound to get better with more practice.
-					h1 What's next...
-					p
-					| The next project for me is the 
-					a(href='https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer') Wikipedia Viewer app
-					| . I'm halfway through already as I write this article so it should be completed by Thursday at the latest.
-					p
-					| If you want to reach out or connect with me, you can find me on 
-					a(href='https://twitter.com/vanvlymenpaws') Twitter
-					|  or 
-					a(href='mailto:arduino731@gmail.com') email me
-					| .
-					p Thanks for reading.
-					hr
-				include ../include/blogSidebar.pug
-				#disqus_thread
-					script.
-						var disqus_config=function(){
-						this.page.url="http://van-vlymen.com/blogs/weatherApp", // Replace PAGE_URL with your page's canonical URL variable
-						this.page.identifier="1"}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-						!function(){var e=document,t=e.createElement("script");
-						t.src="//vanvlymenblogs.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),
-						(e.head||e.body).appendChild(t)}();
-					script#dsq-count-scr(src='//vanvlymenblogs.disqus.com/count.js', async='')
+						else if (weather.indexOf("sunny") &gt;= 0) {
+						skycons.set("animated-icon", Skycons.CLEAR_DAY);
+						}
+				p
+				| I have discovered, through various tests, that this method is not 100% foolproof but it worked well enough for me to stick with it.
+				// <p>You can checkout the full code and effects on <a href="http://codepen.io/ayoisaiah/full/LNLzgx/">Codepen</a>.</p>
+				h2 Key takeaway
+				p
+				| My major takeaway from this project is that I learnt how to access each part of the returned JSON data from the API response and use it in different ways. Although my methodology needs some refining, it's bound to get better with more practice.
+				h1 What's next...
+				p
+				| The next project for me is the 
+				a(href='https://www.freecodecamp.com/challenges/build-a-wikipedia-viewer') Wikipedia Viewer app
+				| . I'm halfway through already as I write this article so it should be completed by Thursday at the latest.
+				p
+				| If you want to reach out or connect with me, you can find me on 
+				a(href='https://twitter.com/vanvlymenpaws') Twitter
+				|  or 
+				a(href='mailto:arduino731@gmail.com') email me
+				| .
+				p Thanks for reading.
+				hr
+			include ../include/blogSidebar.pug
+			#disqus_thread
+				script.
+					var disqus_config=function(){
+					this.page.url="http://van-vlymen.com/blogs/weatherApp", // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier="1"}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					!function(){var e=document,t=e.createElement("script");
+					t.src="//vanvlymenblogs.disqus.com/embed.js",t.setAttribute("data-timestamp",+new Date),
+					(e.head||e.body).appendChild(t)}();
+				script#dsq-count-scr(src='//vanvlymenblogs.disqus.com/count.js', async='')
