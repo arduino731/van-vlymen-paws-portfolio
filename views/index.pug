@@ -1,18 +1,21 @@
 extends layout
 
 block content
-    #home.site-wrapper
-      .center-site-wrapper.inner
-        .text-center
-          img.img-responsive.image-paws-left(src='/img/wolf_paw_Left1.png')
-          img.img-responsive.image-paws-right(src='/img/wolf_paw_Right1.png')
-          .placeName
-            span#Brian.Brian(style='display: none;') Brian
-            span#vanVlymen.vanVlymen(style='display: none;')  van Vlymen
-            p.lead#frontEnd.frontEnd(style='display: none;') FRONT-END WEB DEVELOPER
-      .left-site-wrapper.leftImageSide
-        img.img-responsive(src='img/43.png')
-        img.img-responsive(src='img/whiteWolf.jpg', style='width:100%;')
+    #home.site-wrapper2
+      .left-section
+        img.img-responsive.left-sectionPic(src='img/43.png')
+        img.img-responsive.left-sectionPic(src='img/whiteWolf.jpg')
+        
+      .placeName
+        span#Brian.Brian Brian
+        span#vanVlymen.vanVlymen(style='display: none;')  van Vlymen
+        p.lead#frontEnd.frontEnd(style='display: none;') FRONT-END WEB DEVELOPER
+      .imageWolfPaws
+        img.img-responsive.image-paws-left(src='/img/wolf_paw_Left1.png')
+        img.img-responsive.image-paws-right(src='/img/wolf_paw_Right1.png')
+
+
+
     .mastfoot
       .arrowUp
         a(href="#home")
