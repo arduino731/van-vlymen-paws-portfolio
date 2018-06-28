@@ -242,7 +242,7 @@ body {
 .site-wrapper2 {
     display: flex;
     height: auto;
-    background: red;
+    /* background: red; */
     margin-top: 60px;
 }
 
