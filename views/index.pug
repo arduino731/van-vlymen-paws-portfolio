@@ -5,14 +5,32 @@ block content
     .left-section
       img.img-responsive.left-sectionPic1(src='img/43.png')
       img.img-responsive.left-sectionPic2(src='img/whiteWolf.jpg')
-      
+  
     .placeName
-      span#Brian.Brian Brian
-      span#vanVlymen.vanVlymen(style='display: none;')  van Vlymen
-      p.lead#frontEnd.frontEnd(style='display: none;') FRONT-END WEB DEVELOPER
-    .imageWolfPaws
-      img.img-responsive.image-paws-left(src='/img/wolf_paw_Left1.png')
-      img.img-responsive.image-paws-right(src='/img/wolf_paw_Right1.png')
+      .imageWolfPaws
+        img.image-paws-left(src='/img/wolf_paw_Left1.png')
+        img.image-paws-right(src='/img/wolf_paw_Right1.png')
+      .placeBrianVan(style= "display:flex;")
+        div#Brian.Brian B
+        div#Brian.Brian r
+        div#Brian.Brian i
+        div#Brian.Brian a
+        div#Brian.Brian n
+
+
+        div#vanVlymen.vanVlymen  v
+        div#vanVlymen.vanVlymen  a
+        div#vanVlymen.vanVlymen  n
+        div#vanVlymen.vanVlymen  V
+        div#vanVlymen.vanVlymen  l
+        div#vanVlymen.vanVlymen  y
+        div#vanVlymen.vanVlymen  m
+        div#vanVlymen.vanVlymen  e
+        div#vanVlymen.vanVlymen  n
+
+      .placeFrontEndDev
+        p.lead#frontEnd.frontEnd FRONT-END WEB DEVELOPER
+
 
 
 
@@ -21,6 +39,9 @@ block content
       a(href="#home")
         <i class="fa fa-arrow-up fa-3x"></i>
   //- img.img-responsive(src='img/best-wallpaper-background.jpg', style='width: 100%;')
+  //
+  .testFlexBox
+    h1 HELLO WORLD!!!
   // ABOUT
   #about-container.container
     #about.col-xs-12.paddingScrollTop
@@ -237,10 +258,23 @@ block content
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
   script.
-    TweenMax.to(".site-wrapper2", 3, { backgroundColor:"#2b3541"})
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"#2b3541"})
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"red"})
 
-    TweenMax.from(".left-sectionPic1", 6, { y: 1000 , borderRadius: 10, rotation:360, ease:Back.easeOut })
-    TweenMax.from(".left-sectionPic2", 6, { marginLeft: 300 })
-    //- TweenMax.from("image-paws-left", 1, { y: 300, ease:SteppedEase.config(6)})
+
+    TweenMax.from(".left-sectionPic1", 3, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+    TweenMax.from(".left-sectionPic2", 4, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+    
+    TweenMax.from(".image-paws-left", 4, { y: 500, ease:SteppedEase.config(12)})
+    TweenMax.from(".image-paws-right", 4, { y: 500, ease:SteppedEase.config(12)})
+
+    var tl = new TimelineMax()
+    tl.staggerFrom(".Brian, .vanVlymen", 0.5, {
+      opacity: 0,
+      cycle: {
+        x:[-190, 190]
+      }
+    }, 0.5 )
+    //- tl.timeScale(0.5);
 
   block footer
