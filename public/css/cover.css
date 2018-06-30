@@ -167,6 +167,11 @@ body {
     font-size: 1em;
 }
 
+.codepenColor{
+    color:#66696a;
+    margin-top:10px;
+}
+
 
 /* Extra small devices col-xs-12 (phones, less than 768px) */
 
