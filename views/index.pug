@@ -1,218 +1,243 @@
 extends layout
 
 block content
-    #home.site-wrapper
-      .center-site-wrapper.inner
-        .text-center
-          img.img-responsive.image-paws-left(src='/img/wolf_paw_Left1.png')
-          img.img-responsive.image-paws-right(src='/img/wolf_paw_Right1.png')
-          .placeName
-            span#Brian.Brian(style='display: none;') Brian
-            span#vanVlymen.vanVlymen(style='display: none;')  van Vlymen
-            p.lead#frontEnd.frontEnd(style='display: none;') FRONT-END WEB DEVELOPER
-      .left-site-wrapper.leftImageSide
-        img.img-responsive(src='img/43.png')
-        img.img-responsive(src='img/whiteWolf.jpg', style='width:100%;')
-    .mastfoot
-      .arrowUp
-        a(href="#home")
-          <i class="fa fa-arrow-up fa-3x"></i>
-    //- img.img-responsive(src='img/best-wallpaper-background.jpg', style='width: 100%;')
-    // ABOUT
-    #about-container.container
-      #about.col-xs-12.paddingScrollTop
-        .col-lg-12.col-md-8.col-xs-12(class="text-center")
-          h1.heading ABOUT BRIAN
-          p
-            | I am a self-taught web developer based in San Antonio, and sometimes Austin, TX. I graduated from 
-            a(href='http://www.freecodecamp.com/' target="_blank" rel="tag") The Free Code Camp
-            |  Node js program that I building web and mobile applications.
-            br
-            | My passion is to use technology based solutions, to help solve real world challenges.
-            br
-            .col-md-6
-              h3 Competences:
-              ul(style="display: inline-block; text-align:start;")
-                li Javascript
-                li jQuery
-                li Angular.js
-                li Jade template / PugsJS
-                li Node & Express JS
-                li AngularFire (familiarity)
-                li MongoDB
+  #home.site-wrapper2
+    .left-section
+      img.img-responsive.left-sectionPic1(src='img/43.png')
+      img.img-responsive.left-sectionPic2(src='img/whiteWolf.jpg')
+  
+    .placeName
+      .imageWolfPaws
+        img.image-paws-left(src='/img/wolf_paw_Left1.png')
+        img.image-paws-right(src='/img/wolf_paw_Right1.png')
+      .placeBrianVan(style= "display:flex;")
+        div#Brian.Brian B
+        div#Brian.Brian r
+        div#Brian.Brian i
+        div#Brian.Brian a
+        div#Brian.Brian n
 
-            .col-md-6
-              h3 Tools & expertise:
-              ul(style="display: inline-block; text-align:start;")
-                li Github
-                li Responsive Web Design
-                li Agile Methodologies
-                li Heroku, deploy web apps
 
-          #skills.col-xs-12
-            img(src='img/html.png', title='HTML5')
-            img(src='img/css.png', title='CSS3')
-            img(src='img/bootstrap.png', title='Bootstrap')
-            img(src='img/github2.png', title='GitHub')
+        div#vanVlymen.vanVlymen  v
+        div#vanVlymen.vanVlymen  a
+        div#vanVlymen.vanVlymen  n
+        div#vanVlymen.vanVlymen  V
+        div#vanVlymen.vanVlymen  l
+        div#vanVlymen.vanVlymen  y
+        div#vanVlymen.vanVlymen  m
+        div#vanVlymen.vanVlymen  e
+        div#vanVlymen.vanVlymen  n
 
-          h3.text-center.col-md-12
-            | Free Code Camp Certification 
-          img(src="img/cert.png" class="img-responsive" style="margin:auto;")
-    // WORK
-    section#work.paddingScrollTop.bg-light-image
-      #portfolio.container
-        .row
-          .col-lg-12.text-center(style="background-color:rgba(0,0,0, 0.5);border-radius: 10px; margin-bottom:20px;")
-            h2.section-heading(style='color:white;') Awesomeness Portfolio.
-              h3#below-section.section-subheading.text-muted(style='color:white;') Below you'll find some of my recent work.
-              p(style='color:white;')
-                | With Free Code Camp, I built out JavaScript applications that touched a variety of APIs, such as OpenWeatherMap, Twitch, and Wikipedia. So I already had experience building API integrations.
-                br
-        // Portfolio img0
-        .row
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/BVaeaL/', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/youtubeAPI.png', alt='youtube API')
-            .portfolio-caption
-              h4 Youtube API most recently liked
-              p#small-text.text-muted Jquery and Youtube API
-          // End of Portfolio img0
-          // Portfolio img1
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/XbyYvx', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
-            .portfolio-caption
-              h4 Twitch.tv JSON API project Zipline 4
-              p#small-text.text-muted Bootstrap and Angularjs
-          // End of Portfolio img1
-          // Portfolio img2
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/NAwJqm', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
-            .portfolio-caption
-              h4 Twitch API Project
-              p#small-text.text-muted Bootstrap and Jquery
-          // End of Portfolio img2
-        .row
-          // Portfolio img3
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/rVRMPN', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/calculatorAngular.png', alt='Calculator Angular 1.3')
-            .portfolio-caption
-              h4 Calculator Angular 1.3 Version
-              p#small-text.text-muted Bootstrap and Angular and jquery Javascript
-          // End of Portfolio img3
-          // Portfolio Wikipedia Search Engine
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/jbmvBe', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='', alt='')
-            .portfolio-caption
-              h4 Wikipedia Search Engine
-              p#small-text.text-muted Bootstrap and Angular.js
-          // End of Portfolio img4
-          // Portfolio Weather App
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/JXZdjX', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='Weather App')
-            .portfolio-caption
-              h4 Weather App
-              p#small-text.text-muted jQuery
-        .row
-          // End of Portfolio img5
-          // Portfolio Show the Local Weather Zipline 3
-          .col-md-4.col-sm-4.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/zGMVXY', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
-            .portfolio-caption
-              h4 Show the Local Weather Zipline 3
-              p#small-text.text-muted API Jquery
-          // End of Portfolio img5
-          // Portfolio Tic Tac Toe Game
-          .col-md-4.col-sm-4.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/qYgRdE/', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/vanillaJS.png', alt='Tic Tac Toe')
-            .portfolio-caption
-              h4 Tic Tac Toe
-              p#small-text.text-muted Vanilla Javascript
-          // End of Portfolio img6
-          // Portfolio Simon Game
-          .col-md-4.col-sm-4.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/LNYqrQ', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/simon.png', alt='simon')
-            .portfolio-caption
-              h4 Simon Game Zipline
-              p#small-text.text-muted CSS and jQuery
-          // End of Portfolio img6
-        .row
-          .col-md-12.portfolio-item
-            a.portfolio-link(href='https://codepen.io/arduino731/full/wGgLGK', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='/img/portfolio/randomQuoteMachine.png', alt='Random Quote Machine')
-            .portfolio-caption
-              h4 Random Quote Machine
-              p#small-text.text-muted Bootstrap, jQuery  Javascript
-        .row
-          .col-md-12.portfolio-item
-            a.portfolio-link(href='http://angular-jennifershows.herokuapp.com/', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='http://imgur.com/fYCq9yZ.png', alt='jennfiershows')
-            .portfolio-caption
-              h4 Video Blogs and selling products through PayPal
-              p#small-text.text-muted Bootstrap, AngularJS, PayPal, Javascript
-    // Contact Section
+      .placeFrontEndDev
+        p.lead#frontEnd.frontEnd FRONT-END WEB DEVELOPER
 
-    section.paddingScrollTop.bg-light-image
-      #portfolio.container
-        .row
-          .col-lg-12.text-center(style="background-color:rgba(0,0,0, 0.5);border-radius: 10px; margin-bottom:20px;")
-            h2.section-heading(style='color:white;') Full-Stack Portfolio
-              h3#below-section.section-subheading.text-muted(style='color:white;') Below you'll find some of my recent works.
-              p(style='color:white;')
-                | For my project, I built out JavaScript applications that using the backend developed done by MongoDB and NodeJS.
-                br
-        .row
-          .col-md-4.col-sm-6.portfolio-item
-            a.portfolio-link(href='https://vanvlymenlist.herokuapp.com/', target='_blank', data-toggle='modal')
-              .portfolio-hover
-                .portfolio-hover-content
-                  i.fa.fa-external-link.fa-3x
-              img.img-responsive.img-size(src='http://i.imgur.com/6tcYUCm.png', alt='vanVlymensList')
-            .portfolio-caption
-              h4 developed with MongoDB and passport login  
-              p#small-text.text-muted Login with Facebook and create own image to sell items  
-    
-    <div class="container" id="contact-container">
+
+
+
+  .mastfoot
+    .arrowUp
+      a(href="#home")
+        <i class="fa fa-arrow-up fa-3x"></i>
+  #about-container
+    .aboutFlexbox
+      h1 ABOUT ME 
+      p 
+        | I am a self-taught web developer based in San Antonio, and sometimes Austin, TX. I graduated from 
+        a(href='http://www.freecodecamp.com/' target="_blank" rel="tag") The Free Code Camp
+        |  Node js program that I building web and mobile applications.
+        br
+        br
+        | My passion is to use technology based solutions, to help solve real world challenges.
+        br
+    .aboutFlexbox
+      h1 Technical Skills
+    .aboutFlexbox
+      h2 Web Technoogies & Frameworks: 
+      h5 Angular 1, HTML5, CSS3, Responsive Web Design 
+    .aboutFlexbox
+      h2 Scripts/UI:
+      h5 Javascript, DOM, Jquery, AJAX, BootStrap, API's
+    .aboutFlexbox
+      h2 Database and ORM:
+      h5 MySQL, noSQL(MongoDB)
+    .aboutFlexbox
+      h2 Web Debug Tools: 
+      h5 Chrome developer tools
+    .aboutFlexbox
+      h2 Application/Web Server: 
+      h5 Node
+    .aboutFlexbox
+      h2 Versioning and other tools: 
+      h5 Git, Bash, Github
+    .aboutFlexbox
+      h2 Deployment Tools:
+      h5 Heroku, AWS Codedeploy
+      
+
+    .skills
+      img(src='img/html.png', title='HTML5')
+      img(src='img/css.png', title='CSS3')
+      img(src='img/bootstrap.png', title='Bootstrap')
+      img(src='img/github2.png', title='GitHub')
+
+  h3.text-center.col-md-12
+    | Free Code Camp Certification 
+  img(src="img/cert.png" class="img-responsive" style="margin:auto;")
+  // WORK
+  section#work.paddingScrollTop.bg-light-image
+    #portfolio.container
+      .row
+        .col-lg-12.text-center(style="background-color:rgba(0,0,0, 0.5);border-radius: 10px; margin-bottom:20px;")
+          h2.section-heading(style='color:white;') Awesomeness Portfolio.
+            h3#below-section.section-subheading.text-muted(style='color:white;') Below you'll find some of my recent work.
+            p(style='color:white;')
+              | With Free Code Camp, I built out JavaScript applications that touched a variety of APIs, such as OpenWeatherMap, Twitch, and Wikipedia. So I already had experience building API integrations.
+              br
+      // Portfolio img0
+      .row
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/BVaeaL/', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/youtubeAPI.png', alt='youtube API')
+          .portfolio-caption
+            h4 Youtube API most recently liked
+            p#small-text.text-muted Jquery and Youtube API
+        // End of Portfolio img0
+        // Portfolio img1
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/XbyYvx', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
+          .portfolio-caption
+            h4 Twitch.tv JSON API project Zipline 4
+            p#small-text.text-muted Bootstrap and Angularjs
+        // End of Portfolio img1
+        // Portfolio img2
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/NAwJqm', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
+          .portfolio-caption
+            h4 Twitch API Project
+            p#small-text.text-muted Bootstrap and Jquery
+        // End of Portfolio img2
+      .row
+        // Portfolio img3
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/rVRMPN', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/calculatorAngular.png', alt='Calculator Angular 1.3')
+          .portfolio-caption
+            h4 Calculator Angular 1.3 Version
+            p#small-text.text-muted Bootstrap and Angular and jquery Javascript
+        // End of Portfolio img3
+        // Portfolio Wikipedia Search Engine
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/jbmvBe', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='', alt='')
+          .portfolio-caption
+            h4 Wikipedia Search Engine
+            p#small-text.text-muted Bootstrap and Angular.js
+        // End of Portfolio img4
+        // Portfolio Weather App
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/JXZdjX', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='Weather App')
+          .portfolio-caption
+            h4 Weather App
+            p#small-text.text-muted jQuery
+      .row
+        // End of Portfolio img5
+        // Portfolio Show the Local Weather Zipline 3
+        .col-md-4.col-sm-4.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/zGMVXY', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/comingsoon.png', alt='')
+          .portfolio-caption
+            h4 Show the Local Weather Zipline 3
+            p#small-text.text-muted API Jquery
+        // End of Portfolio img5
+        // Portfolio Tic Tac Toe Game
+        .col-md-4.col-sm-4.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/qYgRdE/', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/vanillaJS.png', alt='Tic Tac Toe')
+          .portfolio-caption
+            h4 Tic Tac Toe
+            p#small-text.text-muted Vanilla Javascript
+        // End of Portfolio img6
+        // Portfolio Simon Game
+        .col-md-4.col-sm-4.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/LNYqrQ', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/simon.png', alt='simon')
+          .portfolio-caption
+            h4 Simon Game Zipline
+            p#small-text.text-muted CSS and jQuery
+        // End of Portfolio img6
+      .row
+        .col-md-12.portfolio-item
+          a.portfolio-link(href='https://codepen.io/arduino731/full/wGgLGK', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='/img/portfolio/randomQuoteMachine.png', alt='Random Quote Machine')
+          .portfolio-caption
+            h4 Random Quote Machine
+            p#small-text.text-muted Bootstrap, jQuery  Javascript
+      .row
+        .col-md-12.portfolio-item
+          a.portfolio-link(href='http://angular-jennifershows.herokuapp.com/', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='http://imgur.com/fYCq9yZ.png', alt='jennfiershows')
+          .portfolio-caption
+            h4 Video Blogs and selling products through PayPal
+            p#small-text.text-muted Bootstrap, AngularJS, PayPal, Javascript
+  // Contact Section
+
+  section.paddingScrollTop.bg-light-image
+    #portfolio.container
+      .row
+        .col-lg-12.text-center(style="background-color:rgba(0,0,0, 0.5);border-radius: 10px; margin-bottom:20px;")
+          h2.section-heading(style='color:white;') Full-Stack Portfolio
+            h3#below-section.section-subheading.text-muted(style='color:white;') Below you'll find some of my recent works.
+            p(style='color:white;')
+              | For my project, I built out JavaScript applications that using the backend developed done by MongoDB and NodeJS.
+              br
+      .row
+        .col-md-4.col-sm-6.portfolio-item
+          a.portfolio-link(href='https://vanvlymenlist.herokuapp.com/', target='_blank', data-toggle='modal')
+            .portfolio-hover
+              .portfolio-hover-content
+                i.fa.fa-external-link.fa-3x
+            img.img-responsive.img-size(src='http://i.imgur.com/6tcYUCm.png', alt='vanVlymensList')
+          .portfolio-caption
+            h4 developed with MongoDB and passport login  
+            p#small-text.text-muted Login with Facebook and create own image to sell items  
+  
+  <div class="container" id="contact-container">
     <section id="contact" class="paddingScrollTop">
     <div class="row">
     <div class="col-lg-6 col-sm-6 col-xs-12">
@@ -232,4 +257,26 @@ block content
     </div>
     </div>
     </section>
-    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  script.
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"#2b3541"})
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"red"})
+
+
+    TweenMax.from(".left-sectionPic1", 3, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+    TweenMax.from(".left-sectionPic2", 4, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+    
+    TweenMax.from(".image-paws-left", 4, { y: 500, ease:SteppedEase.config(12)})
+    TweenMax.from(".image-paws-right", 4, { y: 500, ease:SteppedEase.config(12)})
+
+    var tl = new TimelineMax()
+    tl.staggerFrom(".Brian, .vanVlymen", 0.5, {
+      opacity: 0,
+      cycle: {
+        x:[-190, 190]
+      }
+    }, 0.5 )
+    //- tl.timeScale(0.5);
+
+  block footer

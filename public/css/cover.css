@@ -60,6 +60,7 @@ body {
     font-family: 'Lato', sans-serif;
     font-weight: 100;
     font-size: 5em;
+    padding-top:35px;
 }
 
 .cover {
@@ -78,13 +79,13 @@ body {
 }
 
 .image-paws-left {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    /* display: block; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
 }
 
 .image-paws-right {
-    display: none;
+    /* display: none; */
 }
 
 .arrowUp {
@@ -185,6 +186,7 @@ body {
     .fa-3x {
         font-size: 2em;
     }
+
 }
 
 @media (min-width: 768px) {
@@ -200,14 +202,17 @@ body {
         width: 100%;
     }
     .image-paws-left {
-        margin-right: auto;
-        margin-left: 0;
+        /* margin-right: auto; */
+        /* margin-left: 0; */
+        max-height:155px
+
     }
     .image-paws-right {
-        display: block;
-        margin-left: auto;
-        position: relative;
-        top: -180px;
+        /* display: block; */
+        /* margin-left: auto; */
+        /* position: relative; */
+        /* top: -180px; */
+        max-height:155px
     }
     .center-site-wrapper {
         margin-left: 324px;
@@ -221,10 +226,10 @@ body {
     .site-wrapper {
         margin-bottom: -621px;
     }
-    .placeName {
+    /* .placeName {
         position: relative;
         top: -190px
-    }
+    } */
     #navbar {
         padding-left: 40%;
     }
@@ -243,3 +248,61 @@ body {
 /* Large devices  col-lg-12(large desktops, 1200px and up) */
 
 @media only screen and (min-width: 1200px) {}
+
+.site-wrapper2 {
+    display: flex;
+    height: auto;
+    margin-top: 60px;
+}
+
+.site-wrapper2 .left-section {
+    display: flex;
+    width: 300px;
+    flex-flow: column wrap;
+    min-height: 400px;
+    min-width: 100px;
+}
+
+.placeName{
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   width:100%;
+   align-items: center;
+   height: 350px;
+}
+
+.site-wrapper2 .imageWolfPaws{
+    display: flex;
+    justify-content: space-around;
+    /* background: red; */
+    width: 100%;
+    flex-wrap:wrap;
+    height:auto;
+}
+
+.left-sectionPic1,.left-sectionPic2{
+    height:200px;
+    max-height:200px;
+}
+
+.aboutFlexBox{
+    display:flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    flex-direction: column; 
+}
+.aboutFlexBox h1{
+    margin:10px;
+}
+.aboutFlexBox p {
+    width:auto;
+    max-width: 500px;
+}
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
