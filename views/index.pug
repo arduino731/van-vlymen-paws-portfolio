@@ -40,48 +40,50 @@ block content
         <i class="fa fa-arrow-up fa-3x"></i>
   //- img.img-responsive(src='img/best-wallpaper-background.jpg', style='width: 100%;')
   //
-  .testFlexBox
-    h1 HELLO WORLD!!!
-  // ABOUT
-  #about-container.container
-    #about.col-xs-12.paddingScrollTop
-      .col-lg-12.col-md-8.col-xs-12(class="text-center")
-        h1.heading ABOUT BRIAN
-        p
-          | I am a self-taught web developer based in San Antonio, and sometimes Austin, TX. I graduated from 
-          a(href='http://www.freecodecamp.com/' target="_blank" rel="tag") The Free Code Camp
-          |  Node js program that I building web and mobile applications.
-          br
-          | My passion is to use technology based solutions, to help solve real world challenges.
-          br
-          .col-md-6
-            h3 Competences:
-            ul(style="display: inline-block; text-align:start;")
-              li Javascript
-              li jQuery
-              li Angular.js
-              li Jade template / PugsJS
-              li Node & Express JS
-              li AngularFire (familiarity)
-              li MongoDB
+  .aboutFlexbox
+    h1 ABOUT ME 
+    p 
+      | I am a self-taught web developer based in San Antonio, and sometimes Austin, TX. I graduated from 
+      a(href='http://www.freecodecamp.com/' target="_blank" rel="tag") The Free Code Camp
+      |  Node js program that I building web and mobile applications.
+      br
+      br
+      | My passion is to use technology based solutions, to help solve real world challenges.
+      br
+  .aboutFlexbox
+    h1 Technical Skills
+  .aboutFlexbox
+    h2 Web Technoogies & Frameworks: 
+    h5 Angular 1, HTML5, CSS3, Responsive Web Design 
+  .aboutFlexbox
+    h2 Scripts/UI:
+    h5 Javascript, DOM, Jquery, AJAX, BootStrap, API's
+  .aboutFlexbox
+    h2 Database and ORM:
+    h5 MySQL, noSQL(MongoDB)
+  .aboutFlexbox
+    h2 Web Debug Tools: 
+    h5 Chrome developer tools
+  .aboutFlexbox
+    h2 Application/Web Server: 
+    h5 Node
+  .aboutFlexbox
+    h2 Versioning and other tools: 
+    h5 Git, Bash, Github
+  .aboutFlexbox
+    h2 Deployment Tools:
+    h5 Heroku, AWS Codedeploy
+    
 
-          .col-md-6
-            h3 Tools & expertise:
-            ul(style="display: inline-block; text-align:start;")
-              li Github
-              li Responsive Web Design
-              li Agile Methodologies
-              li Heroku, deploy web apps
+  #skills.col-xs-12
+    img(src='img/html.png', title='HTML5')
+    img(src='img/css.png', title='CSS3')
+    img(src='img/bootstrap.png', title='Bootstrap')
+    img(src='img/github2.png', title='GitHub')
 
-        #skills.col-xs-12
-          img(src='img/html.png', title='HTML5')
-          img(src='img/css.png', title='CSS3')
-          img(src='img/bootstrap.png', title='Bootstrap')
-          img(src='img/github2.png', title='GitHub')
-
-        h3.text-center.col-md-12
-          | Free Code Camp Certification 
-        img(src="img/cert.png" class="img-responsive" style="margin:auto;")
+  h3.text-center.col-md-12
+    | Free Code Camp Certification 
+  img(src="img/cert.png" class="img-responsive" style="margin:auto;")
   // WORK
   section#work.paddingScrollTop.bg-light-image
     #portfolio.container
