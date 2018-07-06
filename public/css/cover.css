@@ -301,3 +301,8 @@ body {
     width:auto;
     max-width: 500px;
 }
+.skills{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
