@@ -153,6 +153,10 @@ body {
     text-align: center;
     margin: auto;
     font-size: 1em;
+    height:50px;
+}
+.createdBy{
+    color: #b8ccdc;
 }
 
 .mastfoot {
