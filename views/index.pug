@@ -6,10 +6,18 @@ block content
       img.img-responsive.left-sectionPic1(src='img/43.png')
       img.img-responsive.left-sectionPic2(src='img/whiteWolf.jpg')
   
-    .placeName
-      .imageWolfPaws
-        img.image-paws-left(src='/img/wolf_paw_Left1.png')
-        img.image-paws-right(src='/img/wolf_paw_Right1.png')
+    //- .placeName
+    //-   .imageWolfPaws
+    //-     img.image-paws-left(src='/img/wolf_paw_Left1.png')
+    //-     img.image-paws-right(src='/img/wolf_paw_Right1.png')
+    .imageWolfPaws
+      .walkingPawBox
+        div
+          img.image-paws-left(src='https://res.cloudinary.com/djohzk4di/image/upload/v1533251712/wolf_pawLeft.png')
+
+
+
+
       .placeBrianVan(style= "display:flex;")
         div#Brian.Brian B
         div#Brian.Brian r
@@ -27,6 +35,9 @@ block content
         div#vanVlymen.vanVlymen  m
         div#vanVlymen.vanVlymen  e
         div#vanVlymen.vanVlymen  n
+      .walkingPawBox
+        div
+          img.image-paws-right(src='https://res.cloudinary.com/djohzk4di/image/upload/v1533166981/wolf_pawRight.png')
 
       .placeFrontEndDev
         p.lead#frontEnd.frontEnd FRONT-END WEB DEVELOPER
@@ -276,8 +287,8 @@ block content
     TweenMax.from(".left-sectionPic1", 3, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
     TweenMax.from(".left-sectionPic2", 4, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
     
-    TweenMax.from(".image-paws-left", 4, { y: 500, ease:SteppedEase.config(12)})
-    TweenMax.from(".image-paws-right", 4, { y: 500, ease:SteppedEase.config(12)})
+    //- TweenMax.from(".image-paws-left", 4, { y: 500, ease:SteppedEase.config(12)})
+    //- TweenMax.from(".image-paws-right", 4, { y: 500, ease:SteppedEase.config(12)})
 
     var tl = new TimelineMax()
     tl.staggerFrom(".Brian, .vanVlymen", 0.5, {
