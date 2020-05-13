@@ -3,7 +3,7 @@ var router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-    res.render('blog/blogList');
+    res.render('blog/index');
 });
 router.get('/StartedRWD', function(req, res, next) {
     res.render('blog/StartedRWD');
