@@ -3,6 +3,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var routes = require('./routes/index');
 var articles = require('./routes/articles');
+var projects = require('./routes/projects');
 var app = express();
 
 app.use(favicon(path.join(__dirname, '/public/img', 'favicon.ico')));
@@ -18,10 +19,7 @@ app.set('views', __dirname + '/views');
 
 app.use('/', routes);
 app.use('/articles', articles);
-
-
-
-
+app.use('/projects', projects);
 
 
 
