@@ -1,7 +1,7 @@
 node_modules/*
 
-particles.json
+particles.*
 
-note.txt
+note.*
 
-herehtml/leds.html
+herehtml/leds.*
