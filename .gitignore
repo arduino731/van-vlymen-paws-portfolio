@@ -2,6 +2,6 @@ node_modules/*
 
 /particle.json
 
-/note.txt
+note.txt
 
 herehtml/leds.html
