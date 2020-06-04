@@ -14,7 +14,7 @@ function myLoop(){
     if(i< 10){
       if( i % 2 === 0) {
         moveUpPaws = moveUpPaws-25;
-        console.log('left', moveUpPaws);
+        // console.log('left', moveUpPaws);
         pawLeft.classList.add('fadePerfect');
         pawRight.classList.remove('fadePerfect');
         pawLeft.style.display = "flex";
@@ -24,7 +24,7 @@ function myLoop(){
         myLoop();
       } else {
         moveUpPaws = moveUpPaws-25;
-        console.log('right', moveUpPaws);
+        // console.log('right', moveUpPaws);
         pawLeft.classList.remove('fadePerfect');
         pawRight.classList.add('fadePerfect');
         pawLeft.style.display = 'none';
@@ -41,7 +41,7 @@ function myLoop(){
       pawRight.style.marginTop = moveUpPaws + 'px';
     }
     if(i === 10){
-      console.log('done');
+      // console.log('done');
       moveUpPaws = moveUpPaws;
       pawLeft.style.marginTop = moveUpPaws + 'px';
       pawLeft.style.display = "flex";

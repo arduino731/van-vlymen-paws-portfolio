@@ -107,6 +107,7 @@ body {
 #about-container {
     width: 100%;
     background: #9EB6CB;
+    padding: 10px 0;
 }
 
 .paddingScrollTop {
@@ -316,6 +317,19 @@ body {
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.slide-in{
+    opacity: 0;
+    transition: all 1.0s;
+    transform: translateY(-200%) scale(.25);
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.active-slide-in{
+    opacity: 1;
+    transform: translateY(0%) scale(1);
 }
 
 .imageWolfPaws{

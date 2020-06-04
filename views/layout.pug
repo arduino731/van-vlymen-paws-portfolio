@@ -16,23 +16,37 @@ head
   script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
   script(src='/js/index.js')
   script(src='/js/analytics.js')
-  //- script(src='/js/walkingPaws.js')
   script#mcjs.
     !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/aedf49568f44e378f05b0f42c/fbf8723291c794d66d86dc7b6.js");
 
 
 body
-  // load navbar.jade
+  // load navbar.pug
   include navbar
 
   // content block
   block content
-  script(src='/js/walkingPaws.js')
 
 
 include footer
 
-
+  script(src='/js/sliderImage.js')
+  script(src='/js/walkingPaws.js')
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+  script.
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"#2b3541"})
+    //- TweenMax.to(".site-wrapper2", 3, { backgroundColor:"red"})
+    TweenMax.from(".left-sectionPic1", 3, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+    TweenMax.from(".left-sectionPic2", 4, { y: 1000 , borderRadius: 10, rotation:360, ease:Bounce.easeIn })
+        //- TweenMax.from(".image-paws-left", 4, { y: 500, ease:SteppedEase.config(12)})
+    //- TweenMax.from(".image-paws-right", 4, { y: 500, ease:SteppedEase.config(12)})
+    var tl = new TimelineMax()
+    tl.staggerFrom(".Brian, .vanVlymen", 0.5, {
+      opacity: 0,
+      cycle: {
+        x:[-190, 190]
+      }
+    }, 0.5 )
     //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     //- script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js', integrity='sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7', crossorigin='anonymous')
 
