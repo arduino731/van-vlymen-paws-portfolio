@@ -107,7 +107,7 @@ body {
 #about-container {
     width: 100%;
     background: #9EB6CB;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
 
 .paddingScrollTop {
@@ -313,7 +313,8 @@ body {
     justify-content: center;
     align-items: center;
     height:auto;
-    flex-direction: column; 
+    flex-direction: column;
+    text-align: center; 
 }
 .aboutFlexBox h1{
     margin:10px;
@@ -330,8 +331,8 @@ body {
 }
 .slide-in{
     opacity: 0;
-    transition: all 0.5s;
-    transform: translateY(-200%) scale(.25);
+    transition: all 0.9s;
+    transform: translateY(-900%) scale(.25);
     border: 5px solid black;
     border-radius: 10px;
 }
@@ -342,7 +343,7 @@ body {
 }
 
 .align-left-slide-in{
-    opacity: 1;
+    opacity: 0;
     transition: all 0.5s;
     transform: translateX(-100%) scale(.25);
 }
