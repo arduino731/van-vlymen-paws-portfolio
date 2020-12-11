@@ -35,7 +35,7 @@ function checkSlide(){
   })
 
 const slideFCC = FCCImage.height;
-const windowSize = window.scrollY + window.innerHeight - slideFCC / 2;
+const windowSize = window.scrollY + window.innerHeight - slideFCC /2;
 const imageBottom = FCCImage.offsetTop + FCCImage.height;
 const isHalfShown = windowSize > FCCImage.offsetTop;
 const isNotScrolledPast = window.scrollY < imageBottom;
