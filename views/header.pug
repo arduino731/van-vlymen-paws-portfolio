@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-head
+  <head>
 
   <!-- Regular data -->
   <meta charset="utf-8">
@@ -10,9 +10,9 @@ head
   <meta name="author" content="Brian van Vlymen"/>
   <meta name="description" content="Front-end Developer" />
   <meta name="keywords"  content="Brian van Vlymen, graphic design, web design, website design, web developer, website builder, responsive web design, front-end developer, build a website, webdesign"/>
-  <meta name="Resource-type" content="Document"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name='robots', content='index, follow' />
+  <meta name="Resource-type" content="Document" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
 
   <!-- Open Graph data -->		
   <meta property="og:author" content="Brian van Vlymen" />
@@ -38,17 +38,17 @@ head
   script(src='/js/index.js')
   script(src='/js/analytics.js')
   script#mcjs.
-    !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/aedf49568f44e378f05b0f42c/fbf8723291c794d66d86dc7b6.js");
+      !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/aedf49568f44e378f05b0f42c/fbf8723291c794d66d86dc7b6.js");
+  </head>
 
+  <body>
+    // load navbar.pug
+    include navbar
 
-body
-  // load navbar.pug
-  include navbar
+    // content block
+    block content
 
-  // content block
-  block content
-
-
+  </body>
 include footer
 
   script(src='/js/sliderImage.js')
