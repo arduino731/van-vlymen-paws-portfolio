@@ -17,8 +17,11 @@ Could you provide more specific details or aspects of your project that you'd li
 # Brian van Vlymen - Front-End Web Developer Portfolio 
 Individual Project Highlights
 **Project Overview:**
-
-REPO IS van-vlymen-paws-portfolio
+`
+#0969DA
+Hello
+`
+Repository #00d2ff van-vlymen-paws-portfolio
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
 
