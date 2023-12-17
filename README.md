@@ -17,7 +17,9 @@ Could you provide more specific details or aspects of your project that you'd li
 # Brian van Vlymen - Front-End Web Developer Portfolio 
 Individual Project Highlights
 **Project Overview:**
-- ![#f03c15] Repository
+```diff
+- Repository
+```
 -
 -
 `#00d2ff` van-vlymen-paws-portfolio `#f03c15`
