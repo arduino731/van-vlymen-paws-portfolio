@@ -7,7 +7,10 @@ Individual Project Highlights
 - van-vlymen-paws-portfolio
 ```
 
-<span class="color:#2048f7, text-align: center">van-vlymen-paws-portfolio</span>
+<span class="color:#2048f7, text-align: center;">van-vlymen-paws-portfolio</span>
+
+<span style="color: #add8e6;">This is light blue text</span>
+
 
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
