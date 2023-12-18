@@ -7,7 +7,7 @@ Individual Project Highlights
 - van-vlymen-paws-portfolio
 ```
 
-
+<span class="color:#2048f7, text-align: center">van-vlymen-paws-portfolio</span>
 
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
@@ -25,6 +25,9 @@ Technologies and Tools:
 -  **DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
 -  **jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
 
+**Performance Optimization and Accessibility:**
+
+Explain the steps taken to optimize website performance and ensure accessibility standards were met.
 
 ## **Code Repository:**
 
