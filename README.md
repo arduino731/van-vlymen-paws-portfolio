@@ -11,6 +11,8 @@ Individual Project Highlights
 
 <span style="color: #add8e6;">This is light blue text</span>
 
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+
 
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
