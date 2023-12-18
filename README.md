@@ -16,6 +16,7 @@ Could you provide more specific details or aspects of your project that you'd li
 
 # Brian van Vlymen - Front-End Web Developer Portfolio 
 Individual Project Highlights
+
 **Project Overview:**
 
 ```diff
