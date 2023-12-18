@@ -13,14 +13,14 @@ A brief description of the project, its purpose, and the unique value it offers 
 Technologies and Tools:
 
 
-**Express:** Utilized for robust server-side functionality.
-**NPM Modules:** Integrated various modules for efficient project development.
-**PUG (Formerly Jade) Template Engine:** Employed for dynamic and reusable HTML template creation.
-**Google Analytics:** Implemented for advanced SEO optimization and user behavior tracking.
-**TweenMax Library:** Used for creating complex animations and enhancing user interface interactions.
-**Vanilla JavaScript:** Applied for fundamental front-end interactivity and custom script solutions.
-**Font Awesome:** Incorporated for visually appealing icons and scalable vector graphics.
-**Bootstrap:** Utilized for responsive and mobile-first design, ensuring cross-platform compatibility.
-**DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
-**jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
+-  **Express:** Utilized for robust server-side functionality.
+-  **NPM Modules:** Integrated various modules for efficient project development.
+-  **PUG (Formerly Jade) Template Engine:** Employed for dynamic and reusable HTML template creation.
+-  **Google Analytics:** Implemented for advanced SEO optimization and user behavior tracking.
+-  **TweenMax Library:** Used for creating complex animations and enhancing user interface interactions.
+-  **Vanilla JavaScript:** Applied for fundamental front-end interactivity and custom script solutions.
+-  **Font Awesome:** Incorporated for visually appealing icons and scalable vector graphics.
+-  **Bootstrap:** Utilized for responsive and mobile-first design, ensuring cross-platform compatibility.
+-  **DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
+-  **jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
 
