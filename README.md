@@ -19,7 +19,7 @@ Individual Project Highlights
 **Project Overview:**
 
 ```diff
-- Repository van-vlymen-paws-portfolio
+- van-vlymen-paws-portfolio
 ```
 
 
