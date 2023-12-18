@@ -3,10 +3,6 @@ Individual Project Highlights
 
 **Project Overview:**
 
-```diff
-- van-vlymen-paws-portfolio
-```
-
 $${\color{red}Welcome \space \color{lightblue}To \space \color{orange}van-vlymen-paws-portfolio}$$
 
 
