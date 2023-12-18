@@ -7,11 +7,7 @@ Individual Project Highlights
 - van-vlymen-paws-portfolio
 ```
 
-<span class="color:#2048f7, text-align: center;">van-vlymen-paws-portfolio</span>
-
-<span style="color: #add8e6;">This is light blue text</span>
-
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}Stackoverflow}$$
+$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}van-vlymen-paws-portfolio}$$
 
 
 A brief description of the project, its purpose, and the unique value it offers to users.
