@@ -12,6 +12,9 @@ Individual Project Highlights
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
 
+```css
+   #00d2ff
+
 **Express:** Utilized for robust server-side functionality.
 **NPM Modules:** Integrated various modules for efficient project development.
 **PUG (Formerly Jade) Template Engine:** Employed for dynamic and reusable HTML template creation.
@@ -22,3 +25,4 @@ Technologies and Tools:
 **Bootstrap:** Utilized for responsive and mobile-first design, ensuring cross-platform compatibility.
 **DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
 **jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
+```
