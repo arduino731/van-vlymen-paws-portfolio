@@ -12,6 +12,7 @@ Individual Project Highlights
 A brief description of the project, its purpose, and the unique value it offers to users.
 Technologies and Tools:
 
+## **Technologies and Tools:**
 
 -  **Express:** Utilized for robust server-side functionality.
 -  **NPM Modules:** Integrated various modules for efficient project development.
@@ -24,3 +25,7 @@ Technologies and Tools:
 -  **DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
 -  **jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
 
+
+## **Code Repository:**
+
+Include links to your code repositories for each project, allowing visitors to view your code and understand your development process.
