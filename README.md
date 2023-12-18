@@ -3,7 +3,7 @@ Individual Project Highlights
 
 **Project Overview:**
 
-$${\color{red}Welcome \space \color{lightblue}To \space \color{orange}van-vlymen-paws-portfolio}$$
+$${\color{red}Welcome \space \color{#2048f7}To \space \color{orange}van-vlymen-paws-portfolio}$$
 
 
 A brief description of the project, its purpose, and the unique value it offers to users.
