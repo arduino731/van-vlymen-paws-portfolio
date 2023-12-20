@@ -7,7 +7,6 @@ $${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}van-vlymen-p
 
 
 A brief description of the project, its purpose, and the unique value it offers to users.
-Technologies and Tools:
 
 ## **Technologies and Tools:**
 
