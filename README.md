@@ -20,6 +20,11 @@ A brief description of the project, its purpose, and the unique value it offers 
 -  **DOM Manipulation:** Demonstrated expertise in manipulating the Document Object Model for dynamic web page updates.
 -  **jQuery Library:** Leveraged for simplifying JavaScript code and enhancing website interactivity.
 
+Features and Functionality: Outline the key features of your project. What makes it stand out? What can users do on your site?
+Design and User Experience: Describe the design choices you made, such as color schemes, layout, and responsive design considerations. Mention any user experience principles you applied.
+Challenges and Solutions: Discuss any significant challenges you faced during the development and how you overcame them. This can demonstrate your problem-solving skills.
+
+
 **SEO-Friendly Features:**
 - **Integrated Google Analytics**: For monitoring traffic and keyword effectiveness.
 - **Strategic Keyword Usage**: Carefully selected for content relevance and search engine optimization.
