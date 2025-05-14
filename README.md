@@ -55,6 +55,8 @@ An interactive web experience built using:
 
 ## 📂 Code Repositories
 
-* [Project Source Code – Angular App](https://github.com/arduino731/jennifershows_Angular)
 * [Project Source Code – Portfolio](https://github.com/arduino731/van-vlymen-paws-portfolio)
+* [Project Source Code – Angular App](https://github.com/arduino731/jennifershows_Angular)
+* [Project Source Code - Full Stack Authentication App with Express, MongoDB, and EJS](https://github.com/arduino731/vanVlymenList)
+
 
