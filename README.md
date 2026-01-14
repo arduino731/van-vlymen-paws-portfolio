@@ -4,7 +4,7 @@
 
 # Brian van Vlymen – Front-End Web Developer Portfolio
 
-Welcome to my portfolio, showcasing unique, visually engaging projects built using modern web technologies. Each project combines responsive design, animation, and accessibility principles to deliver a seamless user experience.
+A high-performance, responsive portfolio engineered to demonstrate core frontend mastery and accessibility standards.
 
 $${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}van-vlymen-paws-portfolio}$$
 
