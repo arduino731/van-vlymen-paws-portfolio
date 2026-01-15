@@ -30,7 +30,7 @@ An interactive, performance-optimized portfolio built with a focus on high-fidel
 
 ## 📂 Code Repositories
 
-* [Project Source Code – Portfolio](https://github.com/arduino731/van-vlymen-paws-portfolio)
+* [Project Source Code – paws-frontend-showcase](https://github.com/arduino731/paws-frontend-showcase)
 * [Project Source Code – Angular App](https://github.com/arduino731/jennifershows_Angular)
 * [Project Source Code - Full Stack Authentication App with Express, MongoDB, and EJS](https://github.com/arduino731/vanVlymenList)
 
