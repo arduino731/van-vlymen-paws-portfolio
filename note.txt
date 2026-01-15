@@ -1,9 +1,18 @@
+It watches your files and restarts the server automatically when you save.
+
+Local Development	
+    $ npm run watch (with nodemon) Auto-restarts on save.
+Production Server	
+    $ npm start
+
+Nodemon starts your app on port 3000.
+
+BrowserSync creates a "mirror" on port 4000.
+
+You use localhost:4000 in your browser.
+
+When you save a .pug or .js file, BrowserSync detects the change and automatically forces your browser to refresh.
+
+
 to convert HTML
-
 https://pughtml.com/
-
-First, run the development server:
-
-```bash
-node app.js
-

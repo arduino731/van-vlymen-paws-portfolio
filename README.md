@@ -1,4 +1,3 @@
-
 # $${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}paws-frontend-showcase}$$ 
 ## 🛠️ Technical Showcase: Animated Portfolio & Engineering Background
 
