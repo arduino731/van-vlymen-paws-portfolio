@@ -8,50 +8,33 @@ A high-performance, responsive portfolio engineered to demonstrate core frontend
 
 $${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}van-vlymen-paws-portfolio}$$
 
+## 🛠️ Technical Showcase: Animated Portfolio & Engineering Background
 
-## 🚀 Project Highlights
+An interactive, performance-optimized portfolio built with a focus on high-fidelity animations and modern frontend architecture.
 
-### 📱 Mobile + Desktop Animated Portfolio
+### 🏗️ Core Project Stack
+* **Templating & Logic:** Pug (Jade) & Vanilla JavaScript (ES6+)
+* **Backend & Routing:** Express.js & Node.js
+* **Styling:** Tailwind CSS & Bootstrap (**Mobile-First Responsive Design**)
+* **Animation Engine:** GSAP (TweenMax) for high-performance scroll-driven transitions
+* **State & Persistence:** LocalStorage for user preference and performance caching
 
-An interactive web experience built using:
+### ✨ Key Engineering Features
+* **Performance Optimization:** Leveraged WebP image formats and lazy-loading to ensure high Core Web Vitals scores.
+* **Complex Animations:** Integrated GSAP for scroll-triggered heading reveals and dynamic, fading paw-trail effects.
+* **SEO & Analytics:** Integrated Google Analytics for user engagement tracking and search engine optimization.
+* **Accessibility (A11y):** Built with semantic HTML5, high-contrast color ratios, and ARIA labels for screen-reader compatibility.
 
-* **Pug (Jade)** for templating
-* **Express.js** for backend routing
-* **GSAP** and **TweenMax** for animation
-* **jQuery + Vanilla JS** for dynamic interactivity
-* **Google Analytics** for SEO and performance insight
+### 🕹️ Logic & Game Development Experience
+* **Game Engines:** Built **Tetris** and **Tic Tac Toe** using Vanilla JavaScript DOM manipulation.
+* **State Logic:** Developed a **Simon Game** using jQuery to handle complex sequence tracking and user input validation.
+* **API Integration:** Engineered applications using **AJAX** and **JSON** to fetch and render dynamic data from external APIs.
+* **Legacy & Frameworks:** Built functional tools (e.g., **Calculator**) using **Angular 1.3**, demonstrating adaptability across different library versions.
 
-**✨ Key Features**:
-
-* Scroll-activated animations
-* Dynamic paw animations with fading effects
-* Fully responsive layout from mobile to desktop
-* Animated headings using GSAP
-* Accessibility-conscious design (contrast, alt tags, navigation)
-
-## 🛠️ Tools & Technologies
-
-* HTML5/CSS3 + Tailwind CSS
-* Bootstrap
-* Font Awesome
-* NPM Modules
-* LocalStorage for performance boost
-* Image optimization (WebP, responsive sizes)
-
-## 🧐 Challenges & Solutions
-
-* **Challenge**: Ensuring smooth animation while remaining accessible
-  **Solution**: Used `GSAP` timelines and keyboard/focus accessibility best practices
-
-* **Challenge**: Maintaining layout consistency across browsers
-  **Solution**: Used responsive units + Tailwind breakpoints
-
-## 📊 SEO & Performance
-
-* Google Analytics integration
-* SEO meta tagging
-* Smart image loading
-* Optimized whitespace and code footprint
+### 🔧 Professional Tools & Workflow
+* **Version Control:** Expert use of **Git/GitHub** for branching and release management (Transitioned to **WSL2 Linux Environment** for professional-grade performance).
+* **Cross-Browser Engineering:** Extensive experience ensuring pixel-perfect layouts and animation stability across Chrome, Firefox, Safari, and Edge.
+* **Deployment:** Automated CI/CD flow using GitHub Pages with custom CNAME integration.
 
 ## 📂 Code Repositories
 
