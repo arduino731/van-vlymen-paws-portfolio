@@ -1,13 +1,5 @@
 
-
-
-
-# Brian van Vlymen – Front-End Web Developer Portfolio
-
-A high-performance, responsive portfolio engineered to demonstrate core frontend mastery and accessibility standards.
-
-$${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}van-vlymen-paws-portfolio}$$
-
+# $${\color{red}Welcome \space \color{#2048f7}to \space \color{orange}paws-frontend-showcase}$$ 
 ## 🛠️ Technical Showcase: Animated Portfolio & Engineering Background
 
 An interactive, performance-optimized portfolio built with a focus on high-fidelity animations and modern frontend architecture.
